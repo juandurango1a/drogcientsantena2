@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Horizontal Scroll Carousel</title>
+<style>
+.carrusel-module {
+  position: relative;
+  font-family: sans-serif;
+}
+.carrusel-header-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 16px 14px 16px;
+}
+.carrusel-scroll-desktop {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0 16px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.carrusel-scroll-desktop::-webkit-scrollbar {
+  display: none;
+}
+.carousel-item {
+  display: inline-flex;
+  gap: 8px;
+  margin-right: 5px;
+  vertical-align: top;
+}
+.carrusel-nav {
+  display: none;
+}
+.carrusel-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: auto;
+  background: #ffffff;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 8px;
+}
+.carrusel-nav .prev {
+  left: 10px;
+}
+.carrusel-nav .next {
+  right: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .carrusel-header-desktop,
+  .carrusel-scroll-desktop {
+    padding-left: 150px !important;
+    padding-right: 150px !important;
+  }
+  .carrusel-nav {
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+<div class="carrusel-module">
+  <div class="carrusel-header-desktop">
+    <span style="font-size: 14px; color: #000000;">Los más queridos</span>
+    <a href="#" style="font-size: 14px; color: #007aff; text-decoration: none;">Ver más</a>
+  </div>
+  <div class="carrusel-scroll-desktop">
+    <div class="carousel-item">
+      <a href="#"><img src="https://cdn.shopify.com/s/files/1/0691/4218/4112/files/Resfriados_comunes.png?v=1752559591" alt="Promo 1" style="width: 140px; height: 250px; border-radius: 12px;"></a>
+      <div style="display: flex; flex-direction: column; gap: 4px;">
+        <a href="#"><img src="https://cdn.shopify.com/s/files/1/0691/4218/4112/files/photo_2025-07-14_00-55-42.jpg?v=1752472703" alt="Promo 2" style="width: 140px; height: 120px; border-radius: 12px;"></a>
+        <a href="#"><img src="https://cdn.shopify.com/s/files/1/0691/4218/4112/files/photo_2025-07-14_00-47-13.jpg?v=1752472767" alt="Promo 3" style="width: 140px; height: 120px; border-radius: 12px;"></a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="#"><img src="https://cdn.shopify.com/s/files/1/0691/4218/4112/files/Hidratacion_oral.png?v=1752559070" alt="Promo 4" style="width: 140px; height: 250px; border-radius: 12px;"></a>
+      <div style="display: flex; flex-direction: column; gap: 4px;">
+        <a href="#"><img src="https://cdn.shopify.com/s/files/1/0691/4218/4112/files/16.png?v=1750663761" alt="Promo 5" style="width: 140px; height: 120px; border-radius: 12px;"></a>
+        <a href="#"><img src="https://cdn.shopify.com/s/files/1/0691/4218/4112/files/15.png?v=1750663761" alt="Promo 6" style="width: 140px; height: 120px; border-radius: 12px;"></a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="#"><img src="https://cdn.shopify.com/s/files/1/0691/4218/4112/files/Cuidado_facial.png?v=1752559164" alt="Promo 7" style="width: 140px; height: 250px; border-radius: 12px;"></a>
+      <div style="display: flex; flex-direction: column; gap: 4px;">
+        <a href="#"><img src="https://cdn.shopify.com/s/files/1/0691/4218/4112/files/14.png?v=1750663761" alt="Promo 8" style="width: 140px; height: 120px; border-radius: 12px;"></a>
+        <a href="#"><img src="https://cdn.shopify.com/s/files/1/0691/4218/4112/files/13.png?v=1750663761" alt="Promo 9" style="width: 140px; height: 120px; border-radius: 12px;"></a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="#"><img src="https://cdn.shopify.com/s/files/1/0691/4218/4112/files/Sistema_inmune.png?v=1752559117" alt="Promo 10" style="width: 140px; height: 250px; border-radius: 12px;"></a>
+      <div style="display: flex; flex-direction: column; gap: 4px;">
+        <a href="#"><img src="https://cdn.shopify.com/s/files/1/0691/4218/4112/files/12.png?v=1750663760" alt="Promo 11" style="width: 140px; height: 120px; border-radius: 12px;"></a>
+        <a href="#"><img src="https://cdn.shopify.com/s/files/1/0691/4218/4112/files/11.png?v=1750663760" alt="Promo 12" style="width: 140px; height: 120px; border-radius: 12px;"></a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <a href="#"><img src="https://cdn.shopify.com/s/files/1/0691/4218/4112/files/Salud_mental_y_sueno.png?v=1752559149" alt="Promo 13" style="width: 140px; height: 250px; border-radius: 12px;"></a>
+      <div style="display: flex; flex-direction: column; gap: 4px;">
+        <a href="#"><img src="https://cdn.shopify.com/s/files/1/0691/4218/4112/files/12.png?v=1750663760" alt="Promo 14" style="width: 140px; height: 120px; border-radius: 12px;"></a>
+        <a href="#"><img src="https://cdn.shopify.com/s/files/1/0691/4218/4112/files/11.png?v=1750663760" alt="Promo 15" style="width: 140px; height: 120px; border-radius: 12px;"></a>
+      </div>
+    </div>
+  </div>
+  <div class="carrusel-nav">
+    <button class="prev" aria-label="Anterior">&#10094;</button>
+    <button class="next" aria-label="Siguiente">&#10095;</button>
+  </div>
+</div>
+<script>
+(function() {
+  const container = document.querySelector('.carrusel-scroll-desktop');
+  const prevBtn = document.querySelector('.carrusel-nav .prev');
+  const nextBtn = document.querySelector('.carrusel-nav .next');
+
+  prevBtn.addEventListener('click', function() {
+    container.scrollBy({ left: -150, behavior: 'smooth' });
+  });
+  nextBtn.addEventListener('click', function() {
+    container.scrollBy({ left: 150, behavior: 'smooth' });
+  });
+})();
+</script>
+</body>
+</html>
